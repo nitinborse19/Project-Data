@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+  
+    <link rel="stylesheet" href="appl-insurance.component.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Insurance application form</div>
+    <div class="content">
+      <form [formGroup]="seasonform" (ngSubmit)="CalculateInsurance()">
+        Logged in:{{email}}
+
+        <div class="user-details">
+          <!-- <div class="input-box">
+            <span class="details" for="season">Season</span>
+            <input type="text" placeholder="Enter Season"  id="season" name="season" formControlName="season">
+            <div *ngIf="!season!.valid && (season!.dirty || season!.touched)" class="error">
+           <div style="color: red;">  <div *ngIf="season!.errors!.required">
+                *Season is required 
+              </div></div>
+          </div>
+
+          </div> -->
+
+          <div class="input-box">
+            <span class="details">Season</span>
+            <select type="text" class="btn  btn-lg" type="button" formControlName="season">
+              <option btn btn-secondary btn-lg disabled selected>Choose Name</option>
+              <!-- <option *ngFor="let item of blist" [value]="item.CropID">{{item.CropName}}</option>
+               </select> 
+               <select placeholder="Fertilizer Type" name="Fertilizer"  required> blist=['Wheat','barley', 'peas', 'gram', 'mustard'];-->
+              <option value="Kharif">Kharif</option>
+              <option value="Rabi">Rabi</option>
+              <!-- <option value="Bajra">Bajra</option> -->
+             
+              <!-- <option *ngFor="let FertType of FertList" [value]="FertType" >{{FertType}}</option> -->
+            </select>
+            
+          </div>
+          <div class="input-box">
+            <span class="details" for="year">Year</span>
+            <input type="number" placeholder="Enter Year"  id="year" name="year" formControlName="year">
+
+            <div *ngIf="!year!.valid && (year!.dirty || year!.touched)" class="error">
+              <div style="color: red;">     <div *ngIf="year!.errors!.required"> *year is required </div>  
+              <div *ngIf="year!.errors!.pattern">*year contain number only</div>
+              </div>
+          </div>
+          </div>
+          <div class="input-box">
+            <span class="details" for="crop">Crop</span>
+            <input type="text" placeholder="Enter crop"  id="crop" name="crop" formControlName="cropname">
+
+            <!-- <div *ngIf="!crop!.valid && (crop!.dirty || crop!.touched)" class="error">
+          <div style="color: red;">    <div *ngIf="crop!.errors!.required">
+                *Crop is required 
+              </div>
+</div>
+          </div> -->
+          </div>
+<!--           <div class="input-box">
+            <span class="details" for="scheme">Scheme</span>
+            <input type="text" placeholder="PMFBY"  id="scheme" name="scheme" formControlName="scheme">
+
+            <div *ngIf="!sum!.valid && (sum!.dirty || sum!.touched)" class="error">
+         <div style="color: red;">     <div *ngIf="sum!.errors!.required"> sum insured is required </div>  
+                        </div>
+</div>
+          </div> -->
+
+          <div class="input-box">
+            <span class="details" for="area">Area</span>
+            <input type="number" placeholder="Enter land area (hectares)"  id="area" name="area" formControlName="area">
+
+            <!-- <div *ngIf="!area!.valid && (area!.dirty || area!.touched)" class="error">
+         <div style="color: red;">  <div *ngIf="area!.errors!.required">Required field</div>  
+              <div *ngIf="area!.errors!.pattern">It  contain number only</div>
+          </div>
+</div> -->
+          </div>
+          <div class="input-box">
+            <span class="details" for="crop">Sum Insured</span>
+            <input type="number" placeholder="sum insured" id="sum insured" name="crop" formControlName="suminsured">
+          </div>
+
+
+            <div>
+            <div class="button">
+                <input type="button" (click)="Calculate()" value="Calculate">
+            </div>
+            </div>
+            <div>
+                <div class="button">
+                    <input type="button" (click)=resetForm() value="Reset">
+            </div>
+          </div>
+        </div>
+        <table class="table">
+          <thead>
+              <tr>
+                  <th>Isurance company</th>
+                  <th>Policyno</th> 
+                  <th>Sum insured(per hectare)</th>
+                  <th>Share premium %</th>
+                  <th>Area</th>
+                  <th>Premium amount</th>
+                  <th>Sum insured</th>                        
+                 <th></th>
+              </tr>
+              <tr>
+              <td>{{insurancecompany}}</td>
+              <td>{{policyno}}</td>
+              <td>{{suminsuredperhectare}}</td>
+              <td>{{sharepremiumpercent}}</td>
+              <td>{{landarea}}</td>
+              <td>{{premiumammount}}</td>
+              <td>{{calculatesuminsured}}</td>  
+            </tr>
+          </thead>
+      </table>
+
+      
+      <div class="button">
+        <input type="submit" value="Apply">
+    </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

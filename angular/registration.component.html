@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="registration.component.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+
+  <div class="container">
+    <div class="title">Farmer Registration</div>
+    <div class="content">
+      <form [formGroup]="RegisterUserForm" (ngSubmit)="RegisterUser()" >
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" formControlName="Farmername">
+            <div *ngIf="!Farmername!.valid && (Farmername!.dirty || Farmername!.touched)" class="text-danger">
+              <div *ngIf="Farmername!.errors!.required">
+              *First Name is required
+              </div>
+            
+          </div>
+          </div>
+
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">Phone</span>
+            <input type="number" placeholder="Enter your phone number" formControlName="Contactno">
+            <div *ngIf="!Contactno!.valid && (Contactno!.dirty || Contactno!.touched)" class="text-danger">
+              <div *ngIf="Contactno!.errors!.required">
+               *Phone is required
+              </div>
+              <div *ngIf="Contactno!.errors!.pattern">Phone number contain number only</div>
+            
+          </div>
+          </div>
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" formControlName="Farmeremail">
+
+
+            <div *ngIf="!Farmeremail!.valid && (Farmeremail!.dirty || Farmeremail!.touched)" class="text-danger">
+              <div *ngIf="Farmeremail!.errors!.required">
+               *Email is required
+              </div>
+              <div *ngIf="Farmeremail!.errors!.pattern">Email contain alphabets,number,@ and .com</div>
+            
+          </div>
+          </div>
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your Address" formControlName="Address">
+            <div *ngIf="!Address!.valid && (Address!.dirty || Address!.touched)" class="text-danger">
+              <div *ngIf="Address!.errors!.required">
+                *Address is required
+              </div>
+             
+            
+          </div>
+          </div>
+         
+
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">City</span>
+            <input type="text" placeholder="Enter your City" formControlName="City">
+            <div *ngIf="!City!.valid && (City!.dirty || City!.touched)" class="text-danger">
+              <div *ngIf="City!.errors!.required">
+                *City is required
+              </div>
+          </div>
+          </div>
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">State</span>
+            <input type="text" placeholder="Enter your State" formControlName="State">
+            <div *ngIf="!State!.valid && (State!.dirty || State!.touched)" class="text-danger">
+              <div *ngIf="State!.errors!.required">
+                *State is required
+              </div>
+          </div>
+            
+          </div>
+
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">Pincode</span>
+            <input type="number" placeholder="Enter your Pincode" formControlName="Pincode">
+            <div *ngIf="!Pincode!.valid && (Pincode!.dirty || Pincode!.touched)" class="text-danger">
+              <div *ngIf="Pincode!.errors!.required">
+               *Pincode is required
+              </div>
+            
+            
+          </div>
+
+
+          </div>
+
+
+
+
+          <div class="input-box">
+            <span class="details">Adhaar Number</span>
+            <input type="number" placeholder="Enter your Adhaar" formControlName="Adhaar">
+            <div *ngIf="!Adhaar!.valid && (Adhaar!.dirty || Adhaar!.touched)" class="text-danger">
+              <div *ngIf="Adhaar!.errors!.required">
+               *Adhaar is required
+              </div>
+              <div *ngIf="Adhaar!.errors!.pattern">Adhaar number contain number only</div>
+            
+          </div>
+            
+          </div>
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">PAN card</span>
+            <input type="number" placeholder="Enter your PAN" formControlName="PAN">
+            <div *ngIf="!PAN!.valid && (PAN!.dirty || PAN!.touched)" class="text-danger">
+              <div *ngIf="PAN!.errors!.required">
+                *PAN is required
+              </div>
+              <div *ngIf="PAN!.errors!.pattern">PAN number contain number only</div>
+            
+          </div>
+
+        </div>
+         
+
+
+
+          <div class="input-box">
+            <span class="details">Land Address</span>
+            <input type="text" placeholder="Enter your Land Address" formControlName="LandAddress">
+            <div *ngIf="!LandAddress!.valid && (LandAddress!.dirty || LandAddress!.touched)" class="text-danger">
+              <div *ngIf="LandAddress!.errors!.required">
+                *Land Address is required
+              </div>
+              <div *ngIf="LandAddress!.errors!.pattern">Address contain number only</div>
+            
+          </div>
+
+          </div>
+
+
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">Land Pincode</span>
+            <input type="number" placeholder="Enter Pincode" formControlName="LandPin">
+            <div *ngIf="!LandPin!.valid && (LandPin!.dirty || LandPin!.touched)" class="text-danger">
+              <div *ngIf="LandPin!.errors!.required">
+               *Land Pincode is required
+              </div>
+            
+            
+          </div>
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+         
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" formControlName="Farmerpassword">
+            <div *ngIf="!Farmerpassword!.valid && (Farmerpassword!.dirty || Farmerpassword!.touched)" class="text-danger">
+              <div *ngIf="Farmerpassword!.errors!.required">
+               *Password  is required
+              </div>
+            
+            
+          </div>
+          </div>
+         
+        </div>
+       
+        
+      
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<body class="bg-img">
+  <div class="container" style="font-size: 16px;">
+      <table class="table table-info mt-5 table-striped">
+       <thead>
+         <tr>
+            
+              <!-- <th>cropType</th>
+              <th>cropName</th> -->
+              <th>Application Id</th>                
+              <th>insuranceCompany</th>
+              <!-- <th>premiumAmount</th> -->
+              <th>area</th>
+              <th>sumInsured</th>    
+              <th>Action</th>                           
+          </tr>
+       </thead>
+
+       <tbody>
+        <tr *ngFor="let product of insuranceadmin">
+          
+          <!-- <td>{{product.croptype}}</td>
+          <td>{{product.cropname}}</td> -->
+          <td>{{product.applicationId}}</td>
+          <td>{{product.company}}</td> 
+              
+          <td>{{product.area}}</td>
+          <td>{{product.suminsured}}</td>
+          
+          <td><button (click)="ApproveInsurance()" class="btn login_btn">Approve</button></td>
+        
+           
+     </tr> 
+    </tbody> 
+       
+
+     </table>
+   </div>
+   
+   <br><br>    
+  
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br><br>
+</body>

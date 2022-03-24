@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="registrationbid.component.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+
+  <div class="container">
+    <div class="title">Bidder Registration</div>
+    <div class="content">
+      <form [formGroup]="RegisterBidderForm" (ngSubmit)="RegisterUser()" >
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" formControlName="Biddername">
+            <div *ngIf="!Biddername!.valid && (Biddername!.dirty || Biddername!.touched)" class="text-danger">
+              <div *ngIf="Biddername!.errors!.required">
+              *First Name is required
+              </div>
+            
+          </div>
+          </div>
+
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">Phone</span>
+            <input type="number" placeholder="Enter your phone number" formControlName="Contactno">
+            <div *ngIf="!Contactno!.valid && (Contactno!.dirty || Contactno!.touched)" class="text-danger">
+              <div *ngIf="Contactno!.errors!.required">
+               *Phone is required
+              </div>
+              <div *ngIf="Contactno!.errors!.pattern">Phone number contain number only</div>
+            
+          </div>
+          </div>
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" formControlName="Bidderemail">
+
+
+            <div *ngIf="!Bidderemail!.valid && (Bidderemail!.dirty || Bidderemail!.touched)" class="text-danger">
+              <div *ngIf="Bidderemail!.errors!.required">
+               *Email is required
+              </div>
+              <div *ngIf="Bidderemail!.errors!.pattern">Email contain alphabets,number,@ and .com</div>
+            
+          </div>
+          </div>
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your Address" formControlName="Address">
+            <div *ngIf="!Address!.valid && (Address!.dirty || Address!.touched)" class="text-danger">
+              <div *ngIf="Address!.errors!.required">
+                *Address is required
+              </div>
+             
+            
+          </div>
+          </div>
+         
+
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">City</span>
+            <input type="text" placeholder="Enter your City" formControlName="City">
+            <div *ngIf="!City!.valid && (City!.dirty || City!.touched)" class="text-danger">
+              <div *ngIf="City!.errors!.required">
+                *City is required
+              </div>
+          </div>
+          </div>
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">State</span>
+            <input type="text" placeholder="Enter your State" formControlName="State">
+            <div *ngIf="!State!.valid && (State!.dirty || State!.touched)" class="text-danger">
+              <div *ngIf="State!.errors!.required">
+                *State is required
+              </div>
+          </div>
+            
+          </div>
+
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">Pincode</span>
+            <input type="number" placeholder="Enter your Pincode" formControlName="Pincode">
+            <div *ngIf="!Pincode!.valid && (Pincode!.dirty || Pincode!.touched)" class="text-danger">
+              <div *ngIf="Pincode!.errors!.required">
+               *Pincode is required
+              </div>
+            
+            
+          </div>
+
+
+          </div>
+
+
+
+
+          <div class="input-box">
+            <span class="details">Adhaar Number</span>
+            <input type="number" placeholder="Enter your Adhaar" formControlName="Adhaar">
+            <div *ngIf="!Adhaar!.valid && (Adhaar!.dirty || Adhaar!.touched)" class="text-danger">
+              <div *ngIf="Adhaar!.errors!.required">
+               *Adhaar is required
+              </div>
+              <div *ngIf="Adhaar!.errors!.pattern">Adhaar number contain number only</div>
+            
+          </div>
+            
+          </div>
+
+
+
+
+
+          <div class="input-box">
+            <span class="details">PAN card</span>
+            <input type="number" placeholder="Enter your PAN" formControlName="PAN">
+            <div *ngIf="!PAN!.valid && (PAN!.dirty || PAN!.touched)" class="text-danger">
+              <div *ngIf="PAN!.errors!.required">
+                *PAN is required
+              </div>
+              <div *ngIf="PAN!.errors!.pattern">PAN number contain number only</div>
+            
+          </div>
+
+        </div>
+         
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" formControlName="BidderPassword">
+            <div *ngIf="!BidderPassword!.valid && (BidderPassword!.dirty || BidderPassword!.touched)" class="text-danger">
+              <div *ngIf="BidderPassword!.errors!.required">
+               *Password  is required
+              </div>
+            
+            
+          </div>
+          </div>
+         
+        </div>
+       
+        
+      
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

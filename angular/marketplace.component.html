@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="marketplace.component.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+    <div class="container">
+        <div class="title">View Market Price</div><br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Crop Type<br></th>
+                <th>Crop Name</th>
+                <th>Base Price</th>              
+               <th></th>
+            </tr>
+        <th></th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let market of marketplace">            
+              <td>{{market.cropname}}</td>
+              <td>{{market.croptype}}</td>
+              <td>{{market.initialprice}}</td>
+                <td></td>
+                
+         </tr>
+        </tbody>
+
+
+    </table>
+   
+    <div class="content">
+        <form action="">
+          <div class="user-details">
+            <div class="input-box">
+                <br>
+              
+              <div class="button">
+                <input type="submit" value="back">
+            </div>  
+        </div>
+    </div>
+        </form>
+    </div>
+</div>
+   </body>
+   </html>

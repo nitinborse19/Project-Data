@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--Code by Divinector (www.divinectorweb.com)-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How to Create responsive Homepage</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.component.css">    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <a class="navbar-brand" href="#">
+                  <h1 style="font-size: 26px;">👨‍🌾Farmer Scheme👨‍🌾</h1>
+                </a>
+        
+                
+        
+                
+                  <ng-container >
+        
+                    <li class="nav-item active">
+                      <a class="nav-link mr-5 ml-2 h5 text-white" routerLink="" routerLinkActive="router-link-active" style="font-size: 20px;"> <i class="fa fa-home" aria-hidden="true"></i>Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link mr-5 h5 text-white" routerLink="/login" routerLinkActive="router-link-active" style="font-size: 20px;" href="#"><i class="fa fa-key" aria-hidden="true"></i>Login</a>
+                      </li>
+                     
+                      <li class="nav-item active" >
+                        <a class="nav-link mr-5 h5 text-white"  routerLink="/about"routerLinkActive="router-link-active"  style="font-size: 20px;"><i class="fa fa-user" aria-hidden="true"></i>About Us</a>
+                      </li>
+                     <!--  <li class="nav-item active" >
+                        <a class="nav-link mr-5 h5 text-white" routerLink="/contact" routerLinkActive="router-link-active"  style="font-size: 20px;"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a>
+                      </li> -->
+                      <li class="nav-item active" >
+                        <a class="nav-link mr-5 h5 text-white" routerLink="/adminlogin" routerLinkActive="router-link-active"  style="font-size: 20px;"><i class="fa fa-phone" aria-hidden="true"></i>Admin</a>
+                      </li>
+        
+        
+                    
+                  
+        
+                  </ng-container>
+        
+        
+                 
+              </ul>
+              
+            </div>
+          </nav>
+<router-outlet></router-outlet>

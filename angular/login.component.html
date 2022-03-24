@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="login.component.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body class="bg">
+  <div class="container">
+    <div class="title">Login</div>
+	
+	<div class="container h-100">
+		<div class="d-flex justify-content-center h-100">
+			<div class="user_card">
+				<div class="d-flex justify-content-center">
+					<div class="brand_logo_container">
+						<!--<img src="assets/farm.jpg" class="brand_logo" alt="Logo" length="1000" width="1000">-->
+					</div>
+				</div>
+				<div class="d-flex justify-content-center form_container">
+					
+					<form (ngSubmit)="login()" [formGroup]="LoginUserForm">
+						<div class="input-group mb-3">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="text" name="username" class="form-control input_user" value="" placeholder="Enter username" id="username" formControlName="Email">
+							<div *ngIf="!Email!.valid && (Email!.dirty || Email!.touched)" class="error" class="text-danger">
+								<div *ngIf="Email!.errors!.required">
+									<br>*Email is required 
+								</div>
+							</div>
+						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input type="password" name="password" class="form-control input_pass" value="" placeholder="Enter the password" id="password" formControlName="Password">
+							
+							<div *ngIf="!Password!.valid && (Password!.dirty || Password!.touched)" class="error" class="text-danger">
+								<div *ngIf="Password!.errors!.required">
+									<br>*Password is required.
+								</div>
+								<div *ngIf="Password!.errors!.minlength">
+									Minimum 6 characters required
+							</div>
+						</div>
+						</div>
+						<div class="form-group">
+							<!-- <div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="customControlInline">
+								<label class="custom-control-label" for="customControlInline">Remember me</label>
+							</div> -->
+						</div>
+						<div class="button d-flex justify-content-center mt-3 login_container">
+							<input type="submit" value="Login">
+						</div>
+					</form>
+				</div>
+		
+				<div class="mt-4">
+					<div class="d-flex justify-content-center links">
+						Don't have an account? <a href="registration" class="ml-2">Sign Up for farmer?</a>
+					</div>
+					<div class="d-flex justify-content-center links">
+                        <div class="d-flex justify-content-center links">
+                             <a href="registrationbid" class="ml-2">Sign Up for bidder?</a>
+                        </div>
+                        <br>
+                        
+						<a href="forget">Forgot your password?</a>
+					</div>
+					<div class="container">
+						<div class="title" >Other Login</div>
+                    <div class="d-flex justify-content-center links">
+                       
+						<div class="form-control input_pass" >
+							
+							<a href="bidderlogin" class="ml-2">Bidder Login</a>
+					   </div>
+                    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+
+</body>
+</html>

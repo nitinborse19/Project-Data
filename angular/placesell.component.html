@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="placesell.component.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+  <body>
+    <div class="container">
+      <div class="title">Place Sell Request</div>
+      <div class="content">
+        <form  [formGroup]="cropform" (ngSubmit)="Applyforsell()">
+          Logged in:{{email}}
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Crop Type</span>
+              <input type="text" placeholder="Enter Crop Type" formControlName="croptype" >
+              <div *ngIf="!croptype?.valid && (croptype?.dirty || croptype?.touched)" class="error" class="text-danger">
+                <div *ngIf="croptype!.errors!.required">
+                  *Crop Type is required
+                </div>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Crop Name</span>
+              <input type="text" placeholder="Enter Crop Name" formControlName="cropname">
+              <div *ngIf="!cropname?.valid && (cropname?.dirty || cropname?.touched)" class="error" Class="text-danger">
+                <div *ngIf="cropname!.errors!.required">
+                  *Cropname is required
+                </div>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Fertilizer Type</span>
+              <input type="text" placeholder="Enter your Fertilizer Type" formControlName="fertilizer">
+              <div *ngIf="!fertilizer?.valid && (fertilizer?.dirty || fertilizer?.touched)" class="error" Class="text-danger">
+                <div *ngIf="fertilizer!.errors!.required">
+                  *Fertilizer name is required
+                </div>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Quantity (in kgs)</span>
+              <input type="number" placeholder="Enter Quantity" formControlName="quantity">
+              <div *ngIf="quantity!.valid && (quantity?.dirty || quantity?.touched)" class="error" Class="text-danger">
+                <div *ngIf="quantity!.errors!.required">
+                  *crop quantity is required
+                </div>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Initial Price</span>
+              <input type="number" placeholder="Enter Initial Price " formControlName="initialprice" >         
+              <div *ngIf="!initialprice?.valid && (initialprice ?.dirty || initialprice ?.touched)" class="error" class="text-danger">
+                <div *ngIf="initialprice !.errors!.required">
+                  *initial price is required
+                </div>
+              </div>
+            </div>
+      
+            <div class="button">
+              <input type="submit" value="Place Sell Request"  [disabled]="!cropform.invalid"/>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

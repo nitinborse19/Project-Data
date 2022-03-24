@@ -1,0 +1,52 @@
+<body class="bg-img">
+  <div class="container" style="font-size: 16px;">
+      <table class="table table-info mt-5 table-striped">
+       <thead>
+          <tr>
+            <th><b>Crop ID </b></th>
+            <th><b>Crop Name</b></th>
+            <th><b>Crop Type</b></th>
+            <th><b>Quantity (KG)</b></th>
+            <th>Base Price(MSP)</th>
+            <th>Current Bid<br></th>
+            <th>Bidder Email<br></th>
+            <th><b>Action</b></th>
+          </tr> 
+       </thead>
+       <tbody>
+        <tr *ngFor="let product of sellcrops1">
+          <td>{{product.requestId}}</td>
+          <td>{{product.cropname}}</td>
+          <td>{{product.croptype}}</td>
+          <td>{{product.quantity}}</td> 
+          <td>{{product.initialprice}}</td>
+          <td>{{product.bidcrop}}</td>
+          <td>{{product.bidderemail}}</td>
+            <td><button class="btn login_btn" (click)="approve(product)">Approve</button></td>
+            <td></td>
+            <!-- [routerLink]="['/bidcrop/',(product.RequestId)]"  -->
+     </tr>
+               <!-- <td>
+                  <ng-container *ngIf="!item.sellStatus"> 
+                    <button class="btn btn-primary btn-sn" (click)="sellButton(item.cropId)"  > Sell Crop </button>
+                  </ng-container>
+
+                  <ng-container *ngIf="item.sellStatus"> 
+                    <button class="btn btn-primary btn-sn" > Sold </button>
+                  </ng-container>
+              </td>  -->
+     
+       </tbody>
+     </table>
+   </div>
+   
+   <br><br>
+   
+  
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br><br>
+</body>

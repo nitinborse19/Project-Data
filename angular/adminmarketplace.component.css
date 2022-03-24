@@ -1,0 +1,242 @@
+html,body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    }
+    
+    .container{
+    height: 100%;
+    align-content: center;
+    }
+    
+    .card{
+    height: 475px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(80, 80, 77, 0.5) !important;
+    }
+    
+    .social_icon span{
+    font-size: 60px;
+    margin-left: 10px;
+    color: #FFC312;
+    }
+    
+    .social_icon span:hover{
+    color: white;
+    cursor: pointer;
+    }
+    
+    .card-header h3{
+    color: white;
+    }
+    
+    .social_icon{
+    position: absolute;
+    right: 20px;
+    top: -45px;
+    }
+    
+    .input-group-prepend span{
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border:0 !important;
+    }
+    
+    input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+    
+    }
+    
+    .remember{
+    color:black;
+    }
+    
+    .remember input
+    {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    }
+    
+    .login_btn{
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+    }
+    
+    .login_btn:hover{
+    color: black;
+    background-color: white;
+    }
+    
+    .links{
+    color: black;
+    }
+    
+    .links a{
+    margin-left: 4px;
+    }
+    input.ng-touched.ng-invalid{ border: 2px solid red;}
+    
+    
+    
+    
+    button{
+        width: 150px;
+        height: 45px;
+    transition: 0.8s;
+    text-align: center;
+    /* border: 1px solid springgreen; */
+    border: 1px solid black;
+    border-radius: 25px;
+    }
+    button:hover{
+        transform: scale(1.1);
+        background: #ff800a;
+        background-color: lightgoldenrodyellow;
+        
+        box-shadow: 4px 4px 4px #000;
+    }
+  
+    thead{ 
+        background: black;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    }
+    table{
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px 4px #666;
+    }
+    
+    
+    .container{
+        height: 100%;
+        align-content: center;
+        padding-top: 50px;
+        }
+        
+        .card{
+            height: 550px;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 400px;
+            background-color: rgb(24, 101, 104) !important;
+            }
+        .social_icon span{
+        font-size: 40px;
+        margin-left: 10px;
+        color: #FFC312;
+        }
+        
+        .social_icon span:hover{
+        color: white;
+        cursor: pointer;
+        }
+        
+        .card-header h3{
+        color: white;
+        }
+        
+        .social_icon{
+        position: absolute;
+        right: 20px;
+        top: -45px;
+        }
+        
+        .input-group-prepend span{
+        width: 130px;
+        font-size: 16px;
+        background-color: #06e2ff;
+        /* background-color: skyblue; */
+        color: black;
+        border:0 !important;
+        }
+        
+        input:focus{
+        outline: 0 0 0 0  !important;
+        box-shadow: 0 0 0 0 !important;
+        
+        }
+        
+        .remember{
+        color:black;
+        }
+        
+        .remember input
+        {
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+        margin-right: 5px;
+        }
+        
+        .login_btn{
+            font-size: small;
+        color: black;
+        background-color: #06e2ff;
+        width: 125px;
+        }
+        
+        .login_btn:hover{
+        color: black;
+        background-color: #06e2ff;
+        }
+        
+        .links{
+        color: black;
+        }
+        
+        .links a{
+        margin-left: 4px;
+        }
+        
+        
+        input.ng-touched.ng-invalid{ border: 3px solid red;}
+        select.ng-touched.ng-invalid{ border: 3px solid red;}
+        
+        input,select{ 
+            font-size: small;
+            width: 220px;}
+        input[typ="file"]{
+            border: 1px solid black;
+             width: 210px;}
+        
+        
+        button{
+            width: 200px;
+            height: 45px;
+        transition: 0.8s;
+        text-align: center;
+        background-color: #FFC312;
+        /* border: 1px solid springgreen; */
+        border: 1px solid black;
+        border-radius: 25px;
+        margin-top: 30px;
+        }
+        button:hover{
+            transform: scale(1.1);
+            background: #ff800a;
+            background-color: lightgoldenrodyellow;
+            
+            box-shadow: 4px 4px 4px #000;
+        }
+        
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 100%;
+          }
+          /* Add a hover effect if you want */
+          .fa:hover {
+            opacity: 0.7;
+          }

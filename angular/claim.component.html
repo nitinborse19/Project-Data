@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="claim.component.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Claim Insurance Form</div>
+    <div class="content">
+      <form [formGroup]="claiminsurance" (ngSubmit)="onClaim()">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Policy No</span>
+            <input type="number" placeholder="Enter Policy No"  formControlName="policyno">
+            <span class="error" *ngIf="policyno!.invalid && policyno!.touched">Required field</span>
+            <span class="error" *ngIf="policyno!.errors!.pattern"><br>Numeric characters only</span>
+
+          </div>
+          <div class="input-box">
+            <span class="details">Insurance Company</span>
+            <input type="text" placeholder="Enter your username" formControlName="company">
+            <span class="error" *ngIf="company!.invalid && company!.touched">Required field</span>
+          </div>
+          <div class="input-box">
+
+            <span class="details">Insuree Name</span>
+            <input type="text" placeholder="Enter Insuree name" formControlName="insurancename">
+            <span class="error" *ngIf="insurancename!.invalid && insurancename!.touched">Required field</span>
+          </div>
+          <div class="input-box">
+            <span class="details">Sum Insured</span>
+            <input type="number" placeholder="Enter Sum Insured" formControlName="insuredsum">
+            <span class="error" *ngIf="insuredsum!.invalid && insuredsum!.touched">Required field</span>
+          </div>
+        </div>
+        <br><br>    
+        <div class="title">Details of Cause for Loss</div>
+        <div class="user-details">
+            <div class="input-box">
+              <span class="details">Cause of Loss</span>
+              <input type="text" placeholder="Cause of Loss" formControlName="causeofloss">
+              <span class="error" *ngIf="causeofloss!.invalid && causeofloss!.touched">Required field</span>
+            </div>
+            <div class="form-group">
+              <label for="dateofbirth">Date of Claim</label>
+                   <br>
+             <input type="date" name="dateofloss" id="dateofloss"  class="form-control" formControlName="dateofloss"> 
+             <!-- <span class="error" *ngIf="dateofloss!.invalid && dateofloss!.touched">Required field</span> -->
+
+            </div>          
+                </div>  
+        <div class="button">
+          <input type="submit"  value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

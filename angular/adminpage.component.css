@@ -1,0 +1,125 @@
+.card{
+  height: 475px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(80, 80, 77, 0.5) !important;
+  }
+  
+  .social_icon span{
+  font-size: 60px;
+  margin-left: 10px;
+  color: #FFC312;
+  }
+  
+  .social_icon span:hover{
+  color: white;
+  cursor: pointer;
+  }
+  
+  .card-header h3{
+  color: white;
+  }
+  
+  .social_icon{
+  position: absolute;
+  right: 20px;
+  top: -45px;
+  }
+  
+  .input-group-prepend span{
+  width: 50px;
+  background-color: #FFC312;
+  color: black;
+  border:0 !important;
+  }
+  
+  input:focus{
+  outline: 0 0 0 0  !important;
+  box-shadow: 0 0 0 0 !important;
+  
+  }
+  
+  .remember{
+  color:black;
+  }
+  
+  .remember input
+  {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+  }
+  
+  .login_btn{
+  color: black;
+  background-color: #FFC312;
+  width: 100px;
+  }
+  .bg-img {
+    background: url('https://i.postimg.cc/gkkYV9wx/b9033e4a-35c8-46d2-b792-9233d305a4b7.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover
+}
+  
+  .login_btn:hover{
+  color: black;
+  background-color: white;
+  }
+  h1 {
+    text-align:center;
+    color: antiquewhite;
+}
+  
+  .links{
+  color: black;
+  }
+  
+  .links a{
+  margin-left: 4px;
+  }
+  input.ng-touched.ng-invalid{ border: 2px solid green;}
+  
+  /*******************/
+  .container{
+     
+      padding-top: 150px;
+      margin: 70px auto;        
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  
+  .box{
+      width: 250px;
+      height: 300px;
+      /* background:#8458B3; */
+      background: #00c6e0;
+      margin: 0px 10px;
+      transition: 0.8s;
+   
+  text-align: center;
+  padding-top: 90px;
+  /* border: 2px solid black; */
+  /* border-radius: 4px; */
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  }
+  .box:hover{
+      transform: scale(1.2);
+      background: #0b8bb3dc;
+      background-color:rgba(33, 240, 160);
+      z-index: 2;
+      box-shadow: 2px 2px 2px #000;
+      
+  }
+  
+  h3{
+      font-family: Verdana;
+      text-shadow: 2px 2px black;
+  }
+  
+  

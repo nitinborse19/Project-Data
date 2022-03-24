@@ -1,0 +1,78 @@
+
+
+         <body class="bg-img">
+            <h2 style="text-align: center; color: rgb(255, 255, 255);"><b>BIDDER'S DASHBOARD </b></h2>
+            <div class="row mr-5">
+              <div class="container col-md-4">
+              
+        
+                        <h3 class="htext" style="color: rgb(255, 255, 255);"> <b>Bidding </b></h3>
+                        <br>
+                        <br>
+                        <div class="card">
+                          <div class="card-body">
+                            <br>
+                            
+                                <form [formGroup]="bidcropForm" (ngSubmit)="submitBid()">
+                              <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Crop Name</span>
+                                </div>
+                                  <input type="text" class="form-control" name="CropName"
+                                  placeholder="Crop Name"  formControlName="cropname">
+                               
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Crop Type</span>
+                                </div>
+                                  <input type="text" class="form-control" name="CropType"
+                                  placeholder="Crop Type" formControlName="croptype">
+                                
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Quantity</span>
+                                </div>
+                                  <input type="number" class="form-control" name="Quantity"
+                                  placeholder="Quantity" formControlName="quantity" >
+                               
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend"> 
+                                  <span class="input-group-text">Base Price</span>
+                                </div> 
+                                  <input type="number" class="form-control" name="BasePrice"
+                                  placeholder="Base Price" formControlName="initialprice">
+                                
+                            </div>
+                              <!-- <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Crop Id</span>
+                                </div>
+                                <input type="number" class="form-control" name="cropId"
+                                  placeholder="Crop ID" required>
+                              </div>  -->
+                              <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Bid Amount</span>
+                                </div>
+                                <input type="number" class="form-control" placeholder="Enter Bid Amount" name="bidAmount"
+                                placeholder="Base Price" formControlName="bidcrop">
+                                  
+                              </div>
+                  
+                  
+                              <div class="form-group d-flex justify-content-center">
+                                <input type="submit" name="button" value="BID" class="btn login_btn">
+                              </div>
+                            </form>
+                          </div>
+                          </div>
+                        </div> 
+                    </div>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+            
+                
+                  </body> 
+  

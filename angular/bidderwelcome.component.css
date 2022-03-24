@@ -1,0 +1,165 @@
+ 
+  @import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+
+}
+
+.container{
+height: 100%;
+align-content: center;
+/*margin:auto;*/
+
+
+
+}
+
+.card{
+height: 365px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(80, 77, 79, 0.5) !important;
+
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 110px;
+font-size: 16px;
+background-color: #eb7b1fab;
+color: black;
+border:0 !important;
+}
+
+select{
+    width:225px;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color:black;
+}
+h1{
+	font-family: 'Black Ops One', cursive;
+    margin-top: 5%;
+}
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+  font-size: small;
+  color: #FFC312;
+  background-color: rgb(25, 11, 223);
+
+  width: 130px;
+  height: 40px;
+  }
+  
+  .login_btn:hover{
+  color: #FFC312;
+  background-color: #1249ff;
+  }
+
+  .links{
+color: black;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+input.ng-touched.ng-invalid{ border: 2px solid red;}
+input
+{
+    font-size: small;
+    width: 100px;
+    height: 40px;
+}
+textarea
+{
+    font-size: small;
+}
+select{
+    font-size: small;
+    width:240px;
+    height: 40px;
+}
+
+.fa {
+    padding: 0px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+  }
+  /* Add a hover effect if you want */
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .bg-img {
+    /* The image used */
+   /* background-image: url("https://user-images.githubusercontent.com/59441764/135326065-dc8d0c21-590f-4254-afae-29052fafaf61.png");*/
+      background-image: url("https://user-images.githubusercontent.com/59441764/135329755-52db6395-6e32-4b6b-b476-78765d2ba8f6.png");
+   /* background-image: url("https://user-images.githubusercontent.com/59441764/135329078-303ccb8d-1e89-4a51-b0f5-6f43a5f7ceaf.png");*/
+    }
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+ 
+
+  .table{
+
+    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(204, 123, 17, 0.897);
+    
+      margin-left:auto;
+      margin-right:auto;
+    
+  }
+
+  .htext {
+   padding-left:115px;
+  }
+
+  .htext {
+    padding-left:115px;
+  }
